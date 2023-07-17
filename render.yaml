@@ -9,5 +9,5 @@ services:
     plan: free
     runtime: python
     buildCommand: "./build.sh"
-    startCommand: "gunicorn in100gram.wsgi:application"
+    startCommand: "cd in100gram/ && gunicorn in100gram.wsgi:application"
     
