@@ -1,3 +1,5 @@
+InstanceType: free
+
 databases:
   - name: In100gram
     databaseName: in100gram_db
