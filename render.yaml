@@ -1,0 +1,12 @@
+databases:
+  - name: In100gram
+    databaseName: In100gram_db
+    user: In100gram_user
+
+services:
+  - type: web
+    name: In100gram
+    runtime: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn mysite.wsgi:application"
+    
